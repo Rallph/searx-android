@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
+        android:iconifiedByDefault="false"
         />
 
     <TextView
@@ -22,12 +23,20 @@
         android:layout_below="@id/search_box"
         />
 
-    <TextView
-        android:id="@+id/results_box"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/results_header"
         android:layout_margin="5dp"
-        />
+        >
+
+        <TextView
+            android:id="@+id/results_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+    </ScrollView>
 
 </RelativeLayout>
